@@ -1,0 +1,40 @@
+* Toolkits by Ringo
+** Documentation
+*** [[http://www.vim.org/][VIM]]
+*** LaTeX
+*** Emacs
+*** [[https://www.gnu.org/software/emacs/][Emacs]]
+*** TeXmacs
+** Programming
+*** PostScript
+*** TCL/TK
+*** Scheme
+*** LISP
+** Graph
+*** Asymptote
+*** GhostScript/PostScript
+*** Inkscape
+*** TeighaViewer
+** Image
+*** Snipaste
+*** ImageMagick
+*** Vieas
+*** GIMP
+** File
+*** Everything
+*** Listary
+*** 7-Zip
+*** Virtual CloneDrive
+*** Link Shell Extension
+*** VeraCrypt
+*** Resilio Sync
+** Math
+*** R/RStudio
+*** Julia
+*** Maxima
+** Audio
+*** foobar2000
+*** Audacity
+** Video
+*** ffmpeg
+*** Avidemux
