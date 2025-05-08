@@ -1,0 +1,25 @@
+pacman -S pactoys
+pacboy update
+pacboy -S vim git make pkg-config
+pacboy -S gmp:m gsl:m gcc:m gdb:m dlfcn:m pcre2:m man-db fftw:m
+
+pacboy -S raylib:m
+pacboy -S opencascade:m
+
+pacboy update
+pacboy -S gsl:m pcre2:m gcc:m
+pacboy -S make:m
+pacboy -S make:l
+
+echo "#! /bin/sh" > /mingw64/bin/make
+echo "\"mingw32-make\" \"\$@\"" >> /mingw64/bin/make
+echo "#! /bin/sh" > /mingw32/bin/make
+echo "\"mingw32-make\" \"\$@\"" >> /mingw32/bin/make
+
+cd /d …\msys64\mingw64\bin
+mklink make.exe mingw32-make.exe
+cd /d …\msys64\mingw32\bin
+mklink make.exe mingw32-make.exe
+
+pacboy -S gnuplot:x
+pacboy -S iconv:m
