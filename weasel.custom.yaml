@@ -1,0 +1,19 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.16.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue Feb 11 20:47:09 2025"
+  rime_version: 1.11.2
+patch:
+  "style/color_scheme": android
+# "app_options/gvim.exe":
+#   ascii_mode: true
+#   vim_mode: true
+  "global_ascii": true
+  show_notifications:
+    - ascii_mode
+    - ascii_punct
+    - full_shape
+    - simplification
+    - schema
+  "show_notifications": false

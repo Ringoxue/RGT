@@ -1,0 +1,17 @@
+patch:
+  switches/@0/reset: 1
+  key_binder/bindings:
+  # import_preset: default
+    - {accept: Release+Escape, toggle: ascii_mode,  when: always}
+    # {accept: Escape, set_option: ascii_mode , when: always}
+    - {accept: Return, send: commit_code, when: composing }
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+  recognizer/patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    number: "^[0-9]+.[0-9]+$"
+    reverse_lookup: "`[a-z]*'?$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
